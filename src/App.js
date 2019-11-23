@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import MenuItems from "./MenuItems/MenuItems";
+import './App.css';
 
 class App extends Component {
   state = {
@@ -14,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-
+        <MenuItems/>
       </div>
     );
   }
