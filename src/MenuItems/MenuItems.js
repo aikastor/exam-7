@@ -22,9 +22,9 @@ const MenuItems = (props) => {
 
   MENUITEMS.map((item, index) => (
     itemComponents.push(
-      <div key={item.name+index} className='MenuItem'>
+      <div key={item.name+index} className='MenuItem' onClick={()=> props.addOrder(item)}>
         <div className='MenuImg'>
-          <img src={item.image} alt={item.name} onClick={()=> props.addOrder(item)}/>
+          <img src={item.image} alt={item.name}/>
         </div>
         <div className='MenuInfo'>
           <p>{item.name}</p>
