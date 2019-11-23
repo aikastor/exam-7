@@ -1,21 +1,7 @@
 import React from 'react';
 
+import MENUITEMS from "../constants";
 import './MenuItems.css';
-import burger from '../assets/burger.png';
-import coffee from '../assets/coffee.png';
-import eggs from '../assets/eggs.png';
-import iceCream from '../assets/ice-cream.png';
-import noodles from '../assets/noodles.png';
-import pizza from '../assets/pizza.png';
-
-const MENUITEMS = [
-  {name: 'Burger', price: 120, image: burger},
-  {name: 'Coffee', price: 40, image: coffee},
-  {name: 'Eggs', price: 70, image: eggs},
-  {name: 'Ice cream', price: 30, image: iceCream},
-  {name: 'Noodles', price: 150, image: noodles},
-  {name: 'Pizza', price: 50, image: pizza}
-  ];
 
 const MenuItems = (props) => {
   const itemComponents = [];
@@ -28,7 +14,7 @@ const MenuItems = (props) => {
         </div>
         <div className='MenuInfo'>
           <p>{item.name}</p>
-          <span>{item.price}</span>
+          <span>Price: {item.price}KGS</span>
         </div>
     </div>)
   ));
@@ -38,6 +24,7 @@ const MenuItems = (props) => {
     </div>
   )
 };
+
 
 
 
