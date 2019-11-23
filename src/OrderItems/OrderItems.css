@@ -9,6 +9,9 @@
     border-radius: 10%;
     border: 1px solid crimson;
 }
+.RemoveButton:hover {
+    background: darkred;
+}
 .orderDetails {
     font-size: 20px;
     font-weight: bold;
