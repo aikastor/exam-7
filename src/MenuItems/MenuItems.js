@@ -14,13 +14,16 @@ const MenuItems = (props) => {
         </div>
         <div className='MenuInfo'>
           <p>{item.name}</p>
-          <span>Price: {item.price}KGS</span>
+          <span>Price: {item.price} KGS</span>
         </div>
     </div>)
   ));
   return (
     <div className='MenuContainer'>
-      {itemComponents}
+      <div className='ItemsContainer'>
+        {itemComponents}
+      </div>
+
     </div>
   )
 };

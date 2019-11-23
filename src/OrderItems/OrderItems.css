@@ -2,3 +2,21 @@
     width: 25%;
     display: inline-block;
 }
+
+.RemoveButton {
+    margin: 5px;
+    background: crimson;
+    border-radius: 10%;
+    border: 1px solid crimson;
+}
+.orderDetails {
+    font-size: 20px;
+    font-weight: bold;
+}
+.priceTag {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 23px;
+    font-weight: bold;
+}
